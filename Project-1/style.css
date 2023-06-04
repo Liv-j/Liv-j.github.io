@@ -1,0 +1,15 @@
+/* styles.css */
+body {
+    font-family: 'Oregano', cursive;
+    background-color: #0A1126;
+    padding: 20px;
+    color: #E1E3E3;
+}
+
+h1 {
+    font-family: 'Aclonica', sans-serif;
+}
+
+p {
+    font-size: 18px;
+}
