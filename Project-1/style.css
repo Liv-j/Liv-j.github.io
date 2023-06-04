@@ -6,6 +6,81 @@ body {
     color: #E1E3E3;
 }
 
+nav {
+    background-color: #333E61;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-link {
+    margin-right: 20px;
+}
+
+.logo-image {
+    width: 100px;
+    height: auto;
+}
+
+.navbar {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.navbar li a {
+    color: #E1E3E3;
+    font-family: 'Aclonica', sans-serif;
+    text-decoration: none; /* Add this line to remove the default underline */
+}
+
+.navbar li:hover {
+    background-color: #5D71B0;
+}
+
+.navbar li::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #E1E3E3;
+    transition: width 0.3s ease-in-out;
+}
+
+.navbar li:hover::before {
+    width: 100%;
+}
+
+.navbar li:nth-child(5):hover a {
+    color: #E6BE5A;
+}
+
+.navbar li:nth-child(4):hover a {
+    color: #70A1E5;
+}
+
+.navbar li:nth-child(3):hover a {
+    color: #9AC0AD;
+}
+
+.navbar li:nth-child(2):hover a {
+    color: #BBACEB;
+}
+
+.navbar li:nth-child(1):hover a {
+    color: #E6BE5A;
+}
+
 h1 {
     font-family: 'Aclonica', sans-serif;
 }
