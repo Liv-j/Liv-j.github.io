@@ -42,17 +42,38 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;  
 }
 
 .logo-link {
     order: 2;
     margin-right: 20px;
     padding-top: 10px;
+    position: relative;
+    text-decoration: none;
 }
 
 .logo-image {
     width: 100px;
     height: auto;
+}
+
+.logo-link:hover::before {
+    content: "Go back to Home";
+    position: relative;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-70%);
+    background-color: #C4A24D;
+    color: #E1E3E3;
+    padding: 5px;
+    border-radius: 2px;
+    font-size: 10;
 }
 
 .navbar {
@@ -115,19 +136,40 @@ nav {
 /* Banners */
 .banner-home{
   background-image: url('g1.jpg');
-  opacity: 0.75;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-top: 6%;
+  padding-top: 13%;
   padding-bottom: 6%;
   height: 35%;
 }
-.home-text {
-  color: #E1E3E3;
-  opacity: 1;
-}
+
 /* Footer */
-.footer i{
+.footer {
+    background-color: #333E61;
     color: #E1E3E3;
+    padding: 10px;
+    text-align: center;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), transparent);
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.01);
 }
+.footer i {
+    margin: 0 3px;
+}
+
+.footer a {
+    color: #E1E3E3;
+    text-decoration: none;
+}
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+  
