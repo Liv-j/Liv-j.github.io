@@ -1,21 +1,53 @@
-/* styles.css */
+/* main text */
 body {
     font-family: 'Oregano', cursive;
     background-color: #0A1126;
     padding: 0;
     margin: 0;
     color: #E1E3E3;
+    text-align: center;    
 }
 
+h1 {
+    font-size: 55px;
+}
+
+h2 {
+    font-size: 44px;
+}
+
+h3 {
+    font-size: 35px;
+}
+
+h4 {
+    font-size: 28px;
+}
+
+h5 {
+    font-size: 22.5px;
+}
+
+p {
+    font-size: 18px;
+    text-align: left;
+    margin: 15px 25% 15px 25%
+}
+
+/* navbar-header */
 nav {
     background-color: #333E61;
+    text-align: left;    
     padding: 10px;
     display: flex;
-    align-items: stretch;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logo-link {
+    order: 2;
     margin-right: 20px;
+    padding-top: 10px;
 }
 
 .logo-image {
@@ -31,7 +63,8 @@ nav {
 }
 
 .navbar li {
-    margin-right: 20px;
+    margin-left: 6%;
+    margin-right: 9%;
     display: flex;
     align-items: center;
     position: relative;
@@ -40,11 +73,8 @@ nav {
 .navbar li a {
     color: #E1E3E3;
     font-family: 'Aclonica', sans-serif;
-    text-decoration: none; /* Add this line to remove the default underline */
-}
-
-.navbar li:hover {
-    background-color: #5D71B0;
+    text-decoration: none;
+     
 }
 
 .navbar li::before {
@@ -82,10 +112,22 @@ nav {
     color: #E6BE5A;
 }
 
-h1 {
-    font-family: 'Aclonica', sans-serif;
+/* Banners */
+.banner-home{
+  background-image: url('g1.jpg');
+  opacity: 0.75;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  height: 35%;
 }
-
-p {
-    font-size: 18px;
+.home-text {
+  color: #E1E3E3;
+  opacity: 1;
+}
+/* Footer */
+.footer i{
+    color: #E1E3E3;
 }
