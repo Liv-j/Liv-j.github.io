@@ -29,9 +29,9 @@ h5 {
 }
 
 p {
-    font-size: 18px;
+    font-size: 20px;
     text-align: left;
-    margin: 15px 25% 15px 25%
+    margin: 7px 18% 7px 18%;
 }
 
 /* navbar-header */
@@ -152,6 +152,7 @@ nav {
     text-align: center;
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), transparent);
     box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.01);
+    margin-top: auto;
 }
 .footer i {
     margin: 0 3px;
@@ -171,5 +172,15 @@ nav {
     width: 100%;
 }
 
+/* home page */
+.home h3{
+    color:#70A1E5;
+} 
+.about-text{
+    background-color: #0E1836;
+    margin: 7px 10%;
+    padding: 15px 0;
+    border-radius: 15px;
+    border: 1px solid #E1E3E3;
+}
 
-  
