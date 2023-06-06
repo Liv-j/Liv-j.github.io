@@ -18,6 +18,8 @@ h2 {
 
 h3 {
     font-size: 35px;
+    padding-top: 5%;
+    padding-bottom: 1.5%;
 }
 
 h4 {
@@ -26,6 +28,8 @@ h4 {
 
 h5 {
     font-size: 22.5px;
+    text-align: left;
+    padding-left:5%;
 }
 
 p {
@@ -51,41 +55,41 @@ nav {
 }
 
 .logo-link {
-    order: 2;
     margin-right: 20px;
-    padding-top: 10px;
     position: relative;
     text-decoration: none;
 }
 
 .logo-image {
-    width: 100px;
+    width: 110px;
     height: auto;
 }
 
 .logo-link:hover::before {
-    content: "Go back to Home";
-    position: relative;
-    bottom: -40px;
+    content: "Click to go Home";
+    position: absolute;
     left: 50%;
-    transform: translateX(-70%);
+    bottom: -30px;
+    transform: translateX(-50%);
     background-color: #C4A24D;
-    color: #E1E3E3;
+    color: #0A1126;
     padding: 5px;
     border-radius: 2px;
-    font-size: 10;
+    font-size: 10px;
+    width: fit-content;
+    white-space: nowrap;
 }
-
+  
 .navbar {
     list-style-type: none;
     display: flex;
     margin: 0;
-    padding: 0;
+    padding: 1.5% 0.5%;
 }
 
 .navbar li {
-    margin-left: 6%;
-    margin-right: 9%;
+    margin-left: 3%;
+    margin-right: 3%;
     display: flex;
     align-items: center;
     position: relative;
@@ -95,6 +99,7 @@ nav {
     color: #E1E3E3;
     font-family: 'Aclonica', sans-serif;
     text-decoration: none;
+    font-size: 16px;
      
 }
 
@@ -139,9 +144,7 @@ nav {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-top: 13%;
-  padding-bottom: 6%;
-  height: 35%;
+  padding: 15% 12% 7%;
 }
 
 /* Footer */
@@ -175,12 +178,39 @@ nav {
 /* home page */
 .home h3{
     color:#70A1E5;
+}
+
+.home-text{
+    border-radius: 15px;
+    border: 1px dotted #E1E3E3;
+    background-color: #2938604d;
+    margin: 2% 7%;
+    padding: 5%;
 } 
-.about-text{
+.home-text h5{
+    text-align: center;
+} 
+.text, .container{
     background-color: #0E1836;
     margin: 7px 10%;
     padding: 15px 0;
     border-radius: 15px;
     border: 1px solid #E1E3E3;
 }
+
+.container a {
+    color: #E6BE5A;
+}
+.text-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 10%;
+}
+
+.text-contact-content {
+    padding: 15px 10%;
+}
+  
+  
 
