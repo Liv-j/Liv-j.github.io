@@ -7,31 +7,25 @@ body {
     color: #E1E3E3;
     text-align: center;    
 }
-
 h1 {
     font-size: 55px;
 }
-
 h2 {
     font-size: 44px;
 }
-
 h3 {
     font-size: 35px;
     padding-top: 5%;
     padding-bottom: 1.5%;
 }
-
 h4 {
     font-size: 30px;
 }
-
 h5 {
     font-size: 24px;
     text-align: left;
     padding-left:5%;
 }
-
 p {
     font-size: 20px;
     text-align: left;
@@ -53,18 +47,15 @@ nav {
     width: 100%;
     z-index: 9999;  
 }
-
 .logo-link {
     margin-right: 20px;
     position: relative;
     text-decoration: none;
 }
-
 .logo-image {
     width: 110px;
     height: auto;
 }
-
 .logo-link:hover::before {
     content: "Click to go Home";
     position: absolute;
@@ -79,14 +70,12 @@ nav {
     width: fit-content;
     white-space: nowrap;
 }
-  
 .navbar {
     list-style-type: none;
     display: flex;
     margin: 0;
     padding: 1.5% 0.5%;
 }
-
 .navbar li {
     margin-left: 3%;
     margin-right: 3%;
@@ -94,7 +83,6 @@ nav {
     align-items: center;
     position: relative;
 }
-
 .navbar li a {
     color: #E1E3E3;
     font-family: 'Aclonica', sans-serif;
@@ -102,7 +90,6 @@ nav {
     font-size: 16px;
      
 }
-
 .navbar li::before {
     content: "";
     position: absolute;
@@ -113,27 +100,21 @@ nav {
     background-color: #E1E3E3;
     transition: width 0.3s ease-in-out;
 }
-
 .navbar li:hover::before {
     width: 100%;
 }
-
 .navbar li:nth-child(5):hover a {
     color: #E6BE5A;
 }
-
 .navbar li:nth-child(4):hover a {
     color: #70A1E5;
 }
-
 .navbar li:nth-child(3):hover a {
     color: #9AC0AD;
 }
-
 .navbar li:nth-child(2):hover a {
     color: #BBACEB;
 }
-
 .navbar li:nth-child(1):hover a {
     color: #E6BE5A;
 }
@@ -144,7 +125,7 @@ nav {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 15% 12% 7%;
+  padding: 16% 12% 7%;
 }
 .banner-text{
     border-radius: 15px;
@@ -153,10 +134,10 @@ nav {
     margin: 2% 7%;
     padding: 5%;
 } 
-
 .banner-text h5{
     text-align: center;
 }
+
 /* Footer */
 .footer {
     background-color: #333E61;
@@ -170,7 +151,6 @@ nav {
 .footer i {
     margin: 0 3px;
 }
-
 .footer a {
     color: #E1E3E3;
     text-decoration: none;
@@ -189,9 +169,6 @@ nav {
 .home h3{
     color:#70A1E5;
 }
-
- 
-
 .text, .row{
     background-color: #0E1836;
     margin: 7px 11%;
@@ -199,8 +176,7 @@ nav {
     border-radius: 15px;
     border: 1px solid #E1E3E3;
 }
-
-.container a {
+.home .container a {
     color: #E6BE5A;
 }
 .text-contact {
@@ -209,11 +185,9 @@ nav {
     justify-content: space-between;
     padding: 15px 10%;
 }
-
-.col-md-1{
+.home .col-md-1{
     padding: 1% 5% 1% 10%;
 }
-
-.col-md-10 {
+.home .col-md-10 {
     padding: 3% 5% 3% 20%;
 }
