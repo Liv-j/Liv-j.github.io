@@ -23,11 +23,11 @@ h3 {
 }
 
 h4 {
-    font-size: 28px;
+    font-size: 30px;
 }
 
 h5 {
-    font-size: 22.5px;
+    font-size: 24px;
     text-align: left;
     padding-left:5%;
 }
@@ -187,12 +187,14 @@ nav {
     margin: 2% 7%;
     padding: 5%;
 } 
+
 .home-text h5{
     text-align: center;
 } 
-.text, .container{
+
+.text, .row{
     background-color: #0E1836;
-    margin: 7px 10%;
+    margin: 7px 11%;
     padding: 15px 0;
     border-radius: 15px;
     border: 1px solid #E1E3E3;
@@ -208,8 +210,12 @@ nav {
     padding: 15px 10%;
 }
 
-.text-contact-content {
-    padding: 15px 10%;
+.col-md-2{
+    padding: 1% 5% 1% 10%;
+}
+
+.col-md-10 {
+    padding: 3% 5% 3% 20%;
 }
   
   
