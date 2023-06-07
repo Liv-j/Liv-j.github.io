@@ -139,14 +139,24 @@ nav {
 }
 
 /* Banners */
-.banner-home{
+.banner{
   background-image: url('g1.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding: 15% 12% 7%;
 }
+.banner-text{
+    border-radius: 15px;
+    border: 1px dotted #E1E3E3;
+    background-color: #2938604d;
+    margin: 2% 7%;
+    padding: 5%;
+} 
 
+.banner-text h5{
+    text-align: center;
+}
 /* Footer */
 .footer {
     background-color: #333E61;
@@ -180,17 +190,7 @@ nav {
     color:#70A1E5;
 }
 
-.home-text{
-    border-radius: 15px;
-    border: 1px dotted #E1E3E3;
-    background-color: #2938604d;
-    margin: 2% 7%;
-    padding: 5%;
-} 
-
-.home-text h5{
-    text-align: center;
-} 
+ 
 
 .text, .row{
     background-color: #0E1836;
@@ -217,6 +217,3 @@ nav {
 .col-md-10 {
     padding: 3% 5% 3% 20%;
 }
-  
-  
-
