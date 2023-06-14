@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Oregano&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/x-icon" href="bottle.jpg">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="script.js"></script>
-  <title>Ink Galaxy | Booking</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Oregano&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/bottle.jpg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.14.0/css/bootstrap-select.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <title>Ink Galaxy | Booking</title>
+  </head>  
 <body>
   <div class = "book">
     <!--navbar-->
@@ -27,7 +31,7 @@
       </div>
       <div class="col-md-2">
         <a href="index.html" class="logo-link" >
-          <img src="logo.png" alt="Logo" class="logo-image">
+          <img src="img/logo.png" alt="Logo" class="logo-image">
         </a>
       </div>
     </nav>
@@ -36,10 +40,60 @@
     <div class ="banner">
       <div class="banner-text">
         <h1><strong>Booking</strong></h1>
-        <h5><strong>Please fill in the needeed info</strong></h5>
+        <h5><strong>* *  Please enter the needeed information  * *</strong></h5>
       </div>
     </div>
-
+    <!--Form for info-->
+    <form>
+      <div class="row" id ="row-card">
+        <div class="col-md-4" id="info">
+          <h3>Personal info</h3>
+          <br>
+          <div class="form-group">
+            <label for="name">* Full name:</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+          </div>
+          <div class="form-group">
+            <label for="email">* Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+          </div>
+          <div class="form-group">
+            <label for="phone">* Phone Number:</label>
+            <input type="text" class="form-control" id="phone" placeholder="Enter your phone number">
+          </div>
+        </div>
+        <div class ="col-md-7" id="info">
+          <h3>Appointment info</h3>
+          <br>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="location">* Location:</label>
+                <select class="form-control" id="location">
+                  <option value="">Select location</option>
+                  <option value="ottawa">Ottawa</option>
+                  <option value="amsterdam">Amsterdam</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="artist">Artist:</label>
+                <select class="form-control" id="artist">
+                  <option value="">Select artist</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="date">* Date:</label>
+                <input type="text" class="form-control" id="date" placeholder="Select a date">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <button id="button1" type="submit" class="btn btn-primary">Submit</button>
+    </form>    
        
     <br>
     <br>
@@ -56,3 +110,52 @@
 </div> 
 </body>
 </html>
+
+<script>
+  // calendar
+  $(document).ready(function() {
+    $('#date').datepicker({
+      format: 'yyyy-mm-dd',
+      autoclose: true
+    });
+  });
+
+  // for dropdown
+  //get elems
+  const locDropdown = document.getElementById('location');
+    const artistDropdown = document.getElementById('artist');
+
+    // artists by loc
+    const artistsLoc = {
+      ottawa: ['Panda', 'Red-y'],
+      amsterdam: ['Foxy', 'Winter']
+    };
+
+    // update artist dropdown
+    function updateArtistOpts() {
+      const selectLoc = locDropdown.value;
+      artistDropdown.innerHTML = ''; // clear opts
+
+      if (selectLoc) {
+        const artists = artistsLoc[selectLoc];
+        artists.forEach(artist => {
+          const option = document.createElement('option');
+          option.value = artist;
+          option.textContent = artist;
+          artistDropdown.appendChild(option);
+        });
+      } else {
+        // default select text
+        const option = document.createElement('option');
+        option.value = '';
+        option.textContent = 'Select artist';
+        artistDropdown.appendChild(option);
+      }
+    }
+
+    // update artist opts when loc selected
+    locDropdown.addEventListener('change', updateArtistOpts);
+
+    // artist opts based loc
+    updateArtistOpts();
+</script>

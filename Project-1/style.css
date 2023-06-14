@@ -1,4 +1,7 @@
 /* main text */
+html{
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Oregano', cursive;
     background-color: #0A1126;
@@ -30,6 +33,9 @@ p {
     font-size: 20px;
     text-align: left;
     margin: 7px 18% 7px 18%;
+}
+#row-card{
+    margin: 2% 6%;
 }
 
 /* navbar-header */
@@ -121,11 +127,11 @@ nav {
 
 /* Banners */
 .banner{
-  background-image: url('g1.jpg');
+  background-image: url('img/g1.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 16% 12% 7%;
+  padding: 14% 12% 3.5%;
 }
 .banner-text{
     border-radius: 15px;
@@ -165,11 +171,33 @@ nav {
     width: 100%;
 }
 
+/*button*/
+#button1{
+    height: fit-content;
+    font-size: 22px;
+    background-color: #E6BE5A;
+    border-color: #E6BE5A;
+}
+#button1:hover{
+    background-color: #C4A24D;
+}
+
+/* cards*/
+.card {
+    padding: 0;
+    border: 3px double #7A998A;
+    background-color: #2938604d;
+}
+.card-map{
+    border:0;
+    margin: 1% 12%;
+}
+
 /* home page */
 .home h3{
     color:#70A1E5;
 }
-.text, .row{
+.text, .home .row{
     background-color: #0E1836;
     margin: 7px 11%;
     padding: 15px 0;
@@ -190,4 +218,139 @@ nav {
 }
 .home .col-md-10 {
     padding: 3% 5% 3% 20%;
+}
+.home .banner{
+    padding: 16% 12% 7%;
+}
+
+
+/* loc page */
+.loc .col-md-6{
+    padding-right: 4%;
+}
+.loc h4, .loc h5{
+    padding: 1% 5%;
+    
+}
+.loc .card-title{
+    color:#5ca793;
+    padding:1% 5%;
+    margin:0;
+}
+.loc h4{
+    color:#5ca793;
+    padding-top: 3%;
+}
+.loc h5{
+    font-size: 18.5px;
+    text-align: left;
+}
+.loc table{
+    color: #E1E3E3;
+    font-size: 18px;
+}
+
+/* artist page */
+.locationClick .col-md-6{
+    margin:0;
+    padding: 0;
+    border: 1px solid #0A1126; 
+}
+.artist .main{
+    margin: 3% 10%;
+    padding: 3%;
+}
+#ottawa h1, #amsterdam h1{
+    text-align: left;
+    padding-top: 5%;
+}
+.col-md-6 .ottawaC{
+    background-image: url('img/purple1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30% 12%;
+}
+.col-md-6 .amsterdamC{
+    background-image: url('img/yellow.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30% 12%;
+}
+.col-md-6 a{
+    color: #E1E3E3;
+}
+.col-md-6:hover h2{
+    text-decoration: underline;
+}
+#ottawa h1, .col-md-6:hover .ottawaC h2{
+    color: #BBACEB;
+}
+#amsterdam h1,.col-md-6:hover .amsterdamC h2{
+    color: #E6BE5A;
+}
+.artist .col-md-6:hover .ottawaC{
+    border: 1px solid #A991F7;
+}
+.artist .col-md-6:hover .amsterdamC{
+    border: 1px solid #C4A24D;
+}
+.pfp{
+    padding-top: 5%;
+    width: 76%;
+}
+#ottawa .card{
+    border-color: #A991F7;
+}
+#amsterdam .card{
+    border-color:#C4A24D;
+}
+#ottawa .card a{
+    color: #A991F7;
+    text-decoration: underline;
+}
+#amsterdam .card a{
+    color: #E6BE5A;
+    text-decoration: underline;
+}
+.card-body .name{
+    font-size: 27px;
+}
+.card-body p{
+    margin:0;
+    padding: 0 5%;
+}
+
+/*booking page*/
+.book .col-md-7, .book .col-md-4{
+    border:2px double #C4A24D;
+    padding:1%;
+}
+
+.form-group{
+    text-align: left;
+    font-size: 22px;
+} 
+.form-control{
+    width: 90%;
+}
+.datepicker table{
+    margin:5%;
+    padding: 2%;    
+}
+.datepicker-dropdown{
+    border: 3px solid #5ca793;
+}
+#info{
+    align-items: center;
+    padding:2%;
 }
