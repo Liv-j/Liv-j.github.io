@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="script.js"></script>
+  <script src="filter.js"></script>
   <title>Ink Galaxy | Gallery</title>
 </head>
 <body>
@@ -36,15 +36,113 @@
     <div class ="banner">
       <div class="banner-text">
         <h1><strong>Gallery</strong></h1>
-        <h5><strong>Pretty pics i stole</strong></h5>
       </div>
     </div>
 
-       
+    <!--options-->
+    <div id="options" class="row">
+      <div class="col-md-3">
+        <h3>Location:</h3>
+        <label>
+          <input type="checkbox" name="location" value="ottawa">
+          Ottawa
+        </label>
+        <br>
+        <label>
+          <input type="checkbox" name="location" value="amsterdam">
+          Amsterdam
+        </label>
+      </div>
+      <div class="col-md-3">
+        <h3>Artist:</h3>
+        <label>
+          <input type="checkbox" name="artist" value="panda">
+          Panda
+        </label>
+        <label>
+          <input type="checkbox" name="artist" value="red-y">
+          Red-y
+        </label>
+        <label>
+          <input type="checkbox" name="artist" value="winter">
+          Winter
+        </label>
+        <label>
+          <input type="checkbox" name="artist" value="foxy">
+          Foxy
+        </label>
+      </div>
+      <div class="col-md-3">
+        <h3>Body Part:</h3>
+        <label>
+          <input type="checkbox" name="bodyPart" value="hands">
+          Hands
+        </label>
+        <label>
+          <input type="checkbox" name="bodyPart" value="wrist">
+          Wrist
+        </label>
+        <label>
+          <input type="checkbox" name="bodyPart" value="shoulder">
+          Shoulder
+        </label>
+        <label>
+          <input type="checkbox" name="bodyPart" value="forearms">
+          Forearms
+        </label>
+      </div>
+    </div>
+    
+
+    <!--photos-->
+    <div class ="row">
+      <div class="col-md-4">
+        <div class="card" id="photo" data-location="amsterdam" data-artist="foxy" data-bodypart="forearms">
+          <div class="card-pfp">
+            <img class="pfp" src="img/photo1.jpg"></img>
+          </div>
+          <div class="card-body">
+            <p>Artist : Foxy</p>
+            <p>675$</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" id="photo" data-location="amsterdam" data-artist="winter" data-bodypart="wrist">
+          <div class="card-pfp">
+            <img class="pfp" src="img/photo2.jpg"></img>
+          </div>
+          <div class="card-body">
+            <p>Artist : Winter</p>
+            <p>350$</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" id="photo" data-location="ottawa" data-artist="red-y" data-bodypart="hands">
+          <div class="card-pfp">
+            <img class="pfp" src="img/photo3.jpg"></img>
+          </div>
+          <div class="card-body">
+            <p>Artist : Red-y</p>
+            <p>800$</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" id="photo" data-location="ottawa" data-artist="panda" data-bodypart="shoulder">
+          <div class="card-pfp">
+            <img class="pfp" src="img/photo4.jpg"></img>
+          </div>
+          <div class="card-body">
+            <p>Artist : Panda</p>
+            <p>475$</p>
+          </div>
+        </div>
+      </div>
+    </div>   
     <br>
-    <br>
-  
-  
+
   <!--Footer-->
   <div class="footer">
     <footer>
