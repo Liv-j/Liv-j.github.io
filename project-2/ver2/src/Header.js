@@ -1,29 +1,33 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Header.css';
+import './css/Header.css';
 
 function Header() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-     
-      <div className="collapse navbar-collapse" id="navbarNav">
-        <ul className="navbar-nav">
-          <li className="nav-item">
-            <Link className="nav-link" to="/">Home</Link>
+    <nav className="nav">
+      <div className="col-md-8">
+        <ul id="navbarNav" className="navbar">
+          <li>
+            <Link to="/">Home</Link>
           </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="/destinations">Destinations</Link>
+          <li>
+            <Link to="/destinations">Destinations</Link>
           </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="/ships">Ships</Link>
+          <li>
+            <Link to="/ships">Ships</Link>
           </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="/voyages">Voyages</Link>
+          <li>
+            <Link to="/voyages">Voyages</Link>
           </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="/reserve">Reserve a Room</Link>
+          <li>
+            <Link to="/reserve">Reserve<br />a<br />Room</Link>
           </li>
         </ul>
+      </div>
+      <div className="col-md-2">
+        <Link to="/" className="logo-link">
+          <img src="img/logo-nav.png" alt="Logo" className="logo-image" />
+        </Link>
       </div>
     </nav>
   );

@@ -12,28 +12,50 @@ nav {
   width: 100%;
   z-index: 9999;  
 }
-
-#navbarNav {
+.logo-link {
+  margin-right: 20px;
+  position: relative;
+  text-decoration: none;
+}
+.logo-image {
+  width: 110px;
+  height: auto;
+}
+.logo-link:hover::before {
+  content: "Click to go Home";
+  position: absolute;
+  left: 50%;
+  bottom: -30px;
+  transform: translateX(-50%);
+  background-color: #C4A24D;
+  color: #0A1126;
+  padding: 5px;
+  border-radius: 2px;
+  font-size: 10px;
+  width: fit-content;
+  white-space: nowrap;
+}
+.navbar {
   list-style-type: none;
   display: flex;
   margin: 0;
   padding: 1.5% 0.5%;
 }
-#navbarNav li {
+.navbar li {
   margin-left: 3%;
   margin-right: 3%;
   display: flex;
   align-items: center;
   position: relative;
 }
-#navbarNav li a {
+.navbar li a {
   color: #E1E3E3;
   font-family: 'Aclonica', sans-serif;
   text-decoration: none;
   font-size: 16px;
    
 }
-#navbarNav li::before {
+.navbar li::before {
   content: "";
   position: absolute;
   bottom: -2px;
@@ -43,21 +65,21 @@ nav {
   background-color: #E1E3E3;
   transition: width 0.3s ease-in-out;
 }
-#navbarNav li:hover::before {
+.navbar li:hover::before {
   width: 100%;
 }
-#navbarNav li:nth-child(5):hover a {
+.navbar li:nth-child(5):hover a {
   color: #E6BE5A;
 }
-#navbarNav li:nth-child(4):hover a {
+.navbar li:nth-child(4):hover a {
   color: #70A1E5;
 }
-#navbarNav li:nth-child(3):hover a {
+.navbar li:nth-child(3):hover a {
   color: #9AC0AD;
 }
-#navbarNav li:nth-child(2):hover a {
+.navbar li:nth-child(2):hover a {
   color: #BBACEB;
 }
-#navbarNav li:nth-child(1):hover a {
+.navbar li:nth-child(1):hover a {
   color: #E6BE5A;
 }
