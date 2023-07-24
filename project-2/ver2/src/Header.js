@@ -20,13 +20,13 @@ function Header() {
             <Link to="/voyages">Voyages</Link>
           </li>
           <li>
-            <Link to="/reserve">Reserve<br />a<br />Room</Link>
+            <Link to="/reserve">Reserve a Room</Link>
           </li>
         </ul>
       </div>
       <div className="col-md-2">
         <Link to="/" className="logo-link">
-          <img src="img/logo-nav.png" alt="Logo" className="logo-image" />
+          <img src="logo.png" alt="Logo" className="logo-image" />
         </Link>
       </div>
     </nav>
